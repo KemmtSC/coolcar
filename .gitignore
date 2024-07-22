@@ -5,8 +5,7 @@ dist/
 *.log  
   
 # 忽略node_modules目录（如果你的项目使用了npm或yarn）  
-wx/node_modules  
-  
+node_modules
 # 忽略开发工具的配置文件  
 # project.config.json  
   

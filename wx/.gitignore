@@ -1,0 +1,22 @@
+# 忽略项目自动生成的文件  
+dist/  
+  
+# 忽略日志文件  
+*.log  
+  
+# 忽略node_modules目录（如果你的项目使用了npm或yarn）  
+node_modules/  
+  
+# 忽略开发工具的配置文件  
+project.config.json  
+  
+# 忽略微信开发者工具的临时文件  
+*.wxss.map  
+*.js.map  
+*.json.map  
+*.wxml.map  
+  
+# 其他根据项目需要忽略的文件  
+# 例如：  
+# temp/  
+# data/

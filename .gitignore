@@ -8,7 +8,7 @@ dist/
 node_modules/  
   
 # 忽略开发工具的配置文件  
-project.config.json  
+# project.config.json  
   
 # 忽略微信开发者工具的临时文件  
 *.wxss.map  
@@ -20,3 +20,4 @@ project.config.json
 # 例如：  
 # temp/  
 # data/
+wx/miniprogram/**/*.js

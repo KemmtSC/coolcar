@@ -17,9 +17,13 @@ Component({
   methods: {
     // 事件处理函数
     bindViewTap() {
-      wx.navigateTo({
-        url: "../logs/logs",
-      })
+      // wx.navigateTo({
+      //   url: "../logs/logs",
+      // })
+      console.log('tapped')
+    },
+    onLoad(){
+      this.updateMotto();
     },
     onChooseAvatar(e: any) {
       const { avatarUrl } = e.detail
@@ -49,6 +53,28 @@ Component({
           })
         }
       })
+    }, 
+    updateMotto(){
+      let shouldStop  = false
+      setTimeout(() => {
+        shouldStop = true
+      }, 10000);
+
+      let count = 0
+      const update = () => {
+        count ++
+        //setTimeout(() => {},1000)
+        if(!shouldStop){
+          this.setData({
+            motto: `Update count: ${count}`,
+          },() => {
+           update()
+          })
+        }
+      }
+
+      update()
     },
   },
+  
 })
